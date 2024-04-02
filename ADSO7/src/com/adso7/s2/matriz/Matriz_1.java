@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * Crear dos matrices de n x n y sumar sus valores, los resultados se deben almacenar en otra matriz. 
  * Los valores y la longitud serán insertados por el usuario. Mostrar las matrices originales y el resultado.
- * @author El profe Julio - JAVA
+ * @author SENA
  */
 public class Matriz_1 {
     

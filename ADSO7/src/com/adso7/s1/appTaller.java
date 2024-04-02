@@ -3,7 +3,7 @@ package com.adso7.s1;
 import java.util.Scanner;
 
 /**
- * @author El profe Julio - JAVA
+ * @author El profe Juio - JAVA
  * 22 - 03 - 2024
  * Taller de repaso sobre estructuras básicas de programación
  * y el manejo de funciones.
@@ -131,88 +131,11 @@ public class appTaller {
     
     /* Calificación de empleados */
     public static void empleados(){
-        double bonificacion = 2400000, puntuacion=0;
+        double puntuacion;
         String nivel = "";
-        if(puntuacion == 0.0){
-            nivel = "Inaceptable";
-        }
-        else if(puntuacion == 0.4){
-            nivel = "Aceptable";
-        }
-        else if(puntuacion >= 0.6){
-            nivel = "Meritorio";
-        }
-        else{
-            nivel = "";
-        }
         
-        if(nivel.equals("")){
-            System.out.println("Puntuación no válida");
-        }
-        else{
-            System.out.println("Te corresponde cobrar, $"+(puntuacion*bonificacion));
-        }
     }
-    
-    /* Sala de juegos */
-    public static void sala_juegos(){
-        int edad;
-        String entrada="";
-        System.out.print("Edad del cliente: ");
-        edad = Integer.parseInt(input.nextLine());
-        if(edad < 4){
-            entrada = "Puede entrar gratis";
-        }
-        else if(edad >=4 && edad < 18){
-            entrada = "Debe pagar $5,000";
-        }
-        else{
-            entrada = "Debe pagar $10,000";
-        }
-        System.out.println(entrada);
-    }
-    
-    /* Área y semiperímetro de un triángulo */
-    public static void triangulo(){
-        double a, b, c, area, semiperimetro;
-        System.out.print("Lado A: ");
-        a = Double.parseDouble(input.nextLine());
-        System.out.print("Lado B: ");
-        b = Double.parseDouble(input.nextLine());
-        System.out.print("Lado C: ");
-        c = Double.parseDouble(input.nextLine());
-        semiperimetro = (a + b + c) / 2;
-        area = Math.sqrt(semiperimetro * (semiperimetro - a) * (semiperimetro - b) * (semiperimetro - c));
-        System.out.println("Semiperímetro: "+semiperimetro+"\n"+ "Area: "+area);
-    }
-    
-    /* Estadística de los pesos de aprendices del programa GRD*/
-    public static void estadistica(){
-        int peso1=0, peso2=0, peso3=0, peso4=0, n; 
-        double peso;
-        System.out.println("Número de aprendices: ");
-        n = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < n; i++) {
-            System.out.println("Peso del aprendiz No."+(i+1)+": ");
-            peso = Double.parseDouble(input.nextLine());
-            if(peso < 40){
-                peso1++;
-            }
-            else if(peso >= 40 && peso < 50){
-                peso2++;
-            }
-            else if(peso >= 50 && peso < 60){
-                peso3++;
-            }
-            else{
-                peso4++;
-            }
-        }
-        System.out.println("Número de aprendices con peso menor de 40 Kg: "+peso1);
-        System.out.println("Número de aprendices con peso entre 40 y 50 Kg: "+peso2);
-        System.out.println("Número de aprendices con peso entre 50 y 60 Kg: "+peso3);
-        System.out.println("Número de aprendices con peso mayor de 60 Kg: "+peso4);
-    }
+
     public static void main(String[] args) {
         // TODO code application logic here
 
@@ -246,23 +169,23 @@ public class appTaller {
                 }
                 
                 case 4 -> {
-                    masa_neumatico();
+                    
                 }
                 
                 case 5 -> {
-                    empleados();
+                    
                 }
                 
                 case 6 -> {
-                    sala_juegos();
+                    
                 }
                 
                 case 7 -> {
-                    triangulo();
+                    
                 }
                 
                 case 8 -> {
-                    estadistica();
+                    
                 }
 
                 case 9 -> {
